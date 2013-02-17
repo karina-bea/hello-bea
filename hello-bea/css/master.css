@@ -12,7 +12,7 @@
 
  /* End Reset CSS */
  
- 
+
  
  /* -----------------------------------------
     Start Page Styling
@@ -110,6 +110,17 @@
    }
  
    #testing span {	float: right;margin-top: 60px; margin-right:25px;}
+
+   .skills a {color:white;}
+   .skills p {margin-bottom: 5px;}
+   .skills i {font-size:40px; position:absolute;  bottom:2px;}
+   #testing i {right:93px;}
+   #research i{right:360px;}
+   #design i {left:90px;}
+   #code i {left:290px;}
+
+
+
  
    .secondrow, .thirdrow {
  	padding-top: 20px;
@@ -190,6 +201,8 @@
  	border-bottom: 6px #ef870c solid;
    }
 
+   #contact .navigation li{font-size: 1em; padding: 0; border-bottom: 3px #ef870c solid;}
+
    a.nav-port:hover, a.nav-about:hover, a.nav-contact:hover { color:orange; -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
 		-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
         -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
@@ -198,6 +211,7 @@
 
    h1 {
  	font-size: 1.4em;
+ 	margin-bottom: -12px;
    }
  
  
@@ -212,10 +226,7 @@
  	color: #aadad8;
    }
 
-   .skills p {margin-bottom: 5px;}
-   .skills i {font-size:40px; position:absolute;  bottom:2px;}
-   #testing i {right:93px;}
-   #research i{right:360px;}
+
  
  
    #about {
@@ -858,4 +869,14 @@ input[type=submit]:active::before {
   .mask {display: none;}
 }
 
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #design span, #code span, #research span, #testing span {display:none;}
+  .skills i {font-size: 60px;}
+    #testing i {right:93px; bottom:50px;}
+   #research i{right:260px; bottom:50px;}
+   #design i {left:90px; bottom:50px;}
+   #code i {left: 258px;bottom: 50px;}
+
+}
 
