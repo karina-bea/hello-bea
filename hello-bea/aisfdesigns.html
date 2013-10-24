@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>Karina Baylocq Portfolio | Interaction Designer</title>
+
+<script type="text/javascript" src="//use.typekit.net/odl0tpz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/600.css" />
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/900.css" />
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  
+  <script src="javascripts/modernizr.foundation.js"></script>	
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  </head>
+<body>
+
+
+  <!-- prettiful orange accent -->
+
+      <div id="accent">
+        </div>
+
+        <header> <!-- html5, hayyyyyy-->
+          <!-- start first row -->
+          <div class="row">
+            <div class="twelve columns">
+              <!-- greeting for politeness-->
+              <div class="greeting">
+              <p> hello, i'm so glad we've finally met.</p>
+              </div>
+              <!-- super sweet css arrow, css3 is the shit -->
+              <div class="arrow-down">
+                </div>
+            </div> <!-- /greeting-->
+
+              <div class="twelve columns">
+                <div class="row">
+
+
+                <div class="six columns">
+                  <h1>karina baylocq</h1>
+                  <h2>interaction designer</h2>
+                </div>
+                <div class="six columns">
+                  <nav>
+                  <ul class="navigation">
+                    <a class="nav-port" href="#"><li><i class="foundicon-monitor"></i></li></a>
+                    <a class="nav-about"href="#"><li><i class="foundicon-address-book"></i></li></a>
+                    <a class="nav-contact" href="#"><li><i class="foundicon-mail"></i></li></a>	
+                  </ul>
+                </nav>
+                </div>
+                  </div>
+                </div>
+            </div>
+
+
+          </div> <!-- end row-->
+
+        </header> <!-- yyyy gurl, hay! /header-->
+
+  <section>
+    <div class="row">
+      <div class="twelve columns">
+       <h1>AI SF Designs</h1>
+       <div class="row">
+         <div><img src="http://dribbble.s3.amazonaws.com/users/69586/screenshots/960690/attachments/111964/secondview.png"></div>
+          <div><img src="http://dribbble.s3.amazonaws.com/users/69586/screenshots/960690/attachments/111964/secondview.png"></div>
+        </div>
+     </div>
+
+    </div>
+   
+
+  </section>
+
+
+
+
+
+
+
+<div id="toTop"><i class="foundicon-home"></i> Back to Top</div>
+
+  <script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox();
+    });
+
+    </script>
+
+    <!--hover over transparency-->
+
+<script type="text/javascript">
+$(window).load(function(){
+  //for each description div...
+  $('div.description').each(function(){
+    //...set the opacity to 0...
+    $(this).css('opacity', 0);
+    //..set width same as the image...
+    $(this).css('width', $(this).siblings('img').width());
+    //...get the parent (the wrapper) and set it's width same as the image width... '
+    $(this).parent().css('width', $(this).siblings('img').width());
+    //...set the display to block
+    $(this).css('display', 'block');
+  });
+
+  $('div.wrapper').hover(function(){
+    //when mouse hover over the wrapper div
+    //get it's children elements with class descriptio
+    //and show it using fadeTo
+    $(this).children('.description').stop().fadeTo(500, 0.7);
+  },function(){
+    //when mouse out of the wrapper div
+    //use fadeTo to hide the div
+    $(this).children('.description').stop().fadeTo(500, 0);
+  });
+
+});
+
+</script>
+
+<!--back to top script-->
+<script type="text/javascript">
+$(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() != 0) {
+      $('#toTop').fadeIn();	
+    } else {
+      $('#toTop').fadeOut();
+    }
+  });
+
+  
+
+  $('#toTop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+  });	
+  $('.nav-port, .design-nav').click(function() {
+    $('body,html').animate({scrollTop:500},800);
+  });
+
+  $('.ux-nav').click(function() {
+    $('body,html').animate({scrollTop:1200},800);
+  });
+  $('.nav-about').click(function() {
+    $('body,html').animate({scrollTop:1500},800);
+  });
+
+  $('.nav-contact').click(function() {
+    $('body,html').animate({scrollTop:2500},800);
+  });
+
+  if (matchMedia('only screen and (max-width: 600px)').matches) {
+ $('.nav-port, .design-nav').click(function() {
+    $('body,html').animate({scrollTop:300},800);
+  });
+
+   $('.nav-about').click(function() {
+    $('body,html').animate({scrollTop:3500},800);
+  });
+
+  $('.nav-contact').click(function() {
+    $('body,html').animate({scrollTop:6500},800);
+  });
+}
+
+
+});
+</script>
+
+
+
+
+
+</body>
+</html>
