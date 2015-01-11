@@ -21,9 +21,9 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/fonts.css">
 
-  
-  <script src="javascripts/modernizr.foundation.js"></script>	
-  
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="source/jquery.fancybox.js"></script>
 
@@ -35,7 +35,10 @@
 <body>
 
 
+  <!-- prettiful orange accent -->
 
+      <div id="accent">
+        </div>
 
         <header> <!-- html5, hayyyyyy-->
           <!-- start first row -->
@@ -43,8 +46,7 @@
             <div class="twelve columns">
               <!-- greeting for politeness-->
               <div class="greeting">
-              <p> BitTorrent & uTorrent.</p>
-               <a href="http://bittorrent.com" target="_blank" class="launch-btn">Launch Site</a>
+              <p> hello, i'm so glad we've finally met.</p>
               </div>
               <!-- super sweet css arrow, css3 is the shit -->
               <div class="arrow-down">
@@ -56,9 +58,16 @@
 
 
                 <div class="six columns">
-                  <a href="index.html"><h1 class="inner-fullname">karina baylocq</h1></a>
+                  <h1>karina baylocq</h1>
+                  <h2>interaction designer</h2>
                 </div>
-               
+                <div class="six columns">
+                  <nav>
+                  <ul class="navigation">
+                    <a class="nav-port" href="kbaylocq.com/index.html"><li><i class="foundicon-monitor"></i></li></a>
+                  </ul>
+                </nav>
+                </div>
                   </div>
                 </div>
             </div>
@@ -67,46 +76,40 @@
           </div> <!-- end row-->
 
         </header> <!-- yyyy gurl, hay! /header-->
-          <!-- prettiful orange accent -->
 
-
-  <section class="project" style="padding-top:15px;">
+  <section class="project">
     <div class="row">
       <div class="twelve columns">
         <div class="row">
           <div class="onboarding">
-              <p>BitTorrent’s corporate website showcasing different products like BitTorrent downloader client, 
+              <h1>AI SF Designs - <a href="http://aisfdesigns.com" target="_blank">Launch Site</a></h1>
+              <p>AI SF Designs is a website created to be a resource to The Art Institute of California—San
 
-uTorrent client, BitTorrent Sync, & BitTorrent Bundles. Visual assets created for the website like 
+    Francisco students in the design majors. It’s meant to showcase work of previous and current
 
-infographics and nav styling.</p>
+    students and give an easy workflow for the advisors.</p>
           </div>
         </div>
-      </div>
-    </div>
-
-      <section style="background-color:#fff;">
-
-         <div class="row">
-          <div class="jumbo-mock">
-            <h3>Page Design</h3>
-            <img src="images/btscreen.jpg">
-          </div>
+       <div class="row">
+           <div class="screenshot-section">
+              <img class="hero-screenshot" src="images/aisf-greeter.jpg">
+              <img class="hero-sub1"src="images/aisf-small.jpg">
+              <img class="hero-sub2"src="images/aisf-small2.jpg">
+           </div>
         </div>
 
         <div class="row">
           <div class="jumbo-mock">
-            <h3>Visual studies for redesign</h3>
-            <img src="images/ut-visual1.jpg">
-            <img src="images/ut-visual2.jpg">
-            <img src="images/ut-visual3.jpg">
+            <h3>Real pixels mock</h3>
+            <img src="http://cdn1.dribbble.com/users/69586/screenshots/960690/attachments/109657/graduates_fullpixels.png">
           </div>
         </div>
 
         <div class="row">
           <div class="sketches-section">
-            <h3>Diagram</h3>
-            <div class="twelve columns"><img src="images/CE_diagram.jpg"></div>
+            <h3>Sketches</h3>
+            <div class="six columns"><img src="images/whiteboard.png"></div>
+            <div class="six columns"><img src="images/whiteboard2.png"></div>
 
           </div>
         </div>
@@ -114,21 +117,21 @@ infographics and nav styling.</p>
 
         <div class="row">
           <div class="sketches-section">
-            <h3>Illustrations</h3>
-            <div class="row" style="padding-bottom:50px;">
-              <div class="four columns"><img src="images/bt-illus1.png"></div>
-              <div class="four columns"><img src="images/bt-illus2.png"></div>
-              <div class="four columns"><img src="images/bt-illus3.png"></div>
-          </div>
-          <div class="row">
-            <div class="four columns"><img src="images/bt-illus4.png"></div>
-            <div class="four columns"><img src="images/bt-illus5.png"></div>
-            <div class="four columns"><img src="images/bt-illus6.png"></div>
-          </div>
+            <h3>Wireframe</h3>
+            <div class="six columns"><img src="http://fpoimg.com/600x450"></div>
+            <div class="six columns"><img src="http://fpoimg.com/600x450"></div>
 
           </div>
         </div>
-    </section>
+
+
+
+        <div class="row">
+          <div class="persona-section">
+            <div data-configid="1728216/5624319" style="width: 650px; height: 200px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+
+          </div>
+        </div>
 
 
 
@@ -137,7 +140,7 @@ infographics and nav styling.</p>
      </div>
 
     </div>
-   
+
 
   </section>
 
@@ -157,18 +160,18 @@ infographics and nav styling.</p>
 $(function() {
   $(window).scroll(function() {
     if($(this).scrollTop() != 0) {
-      $('#toTop').fadeIn();	
+      $('#toTop').fadeIn();
     } else {
       $('#toTop').fadeOut();
     }
   });
 
-  
+
 
   $('#toTop').click(function() {
     $('body,html').animate({scrollTop:0},800);
-  });	
-  
+  });
+
 
 }
 

@@ -1,7 +1,7 @@
 (function ($) {
-  
+
   $.fn.foundationMediaQueryViewer = function (options) {
-    
+
     var settings  = $.extend(options,{toggleKey:77}); // // Press 'M'
     $(document).on("keyup.mediaQueryViewer", ":input", function(e){
       if (e.which === settings.toggleKey) {
@@ -11,7 +11,7 @@
     $(document).on("keyup.mediaQueryViewer", function(e) {
       var $mqViewer = $('#fqv');
 
-      if (e.which === settings.toggleKey) { 
+      if (e.which === settings.toggleKey) {
         if ($mqViewer.length > 0) {
           $mqViewer.remove();
         } else {

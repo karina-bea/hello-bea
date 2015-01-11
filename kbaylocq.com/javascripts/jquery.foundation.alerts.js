@@ -1,10 +1,10 @@
 (function ($) {
-  
+
   $.fn.foundationAlerts = function (options) {
     var settings = $.extend({
       callback: $.noop
     }, options);
-    
+
     $(document).on("click", ".alert-box a.close", function (event) {
       event.preventDefault();
       $(this).closest(".alert-box").fadeOut(function (event) {
@@ -13,7 +13,7 @@
         settings.callback();
       });
     });
-    
+
   };
 
 })(jQuery);

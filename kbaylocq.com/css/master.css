@@ -1,44 +1,44 @@
  /* Start Reset CSS */
  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
- 
+
  ol, ul {list-style: none;}
- 
+
  blockquote, q {quotes: none;}
- 
+
  blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
- 
+
  table {border-collapse: collapse; border-spacing: 0;}
 
  /* End Reset CSS */
- 
 
- 
+
+
  /* -----------------------------------------
     Start Page Styling
  ----------------------------------------- */
- 
- 
- 
+
+
+
  	body {background: #fdffef url(../images/bg3.png); width: 100%; height: 100%; font-family:"bree-serif",sans-serif;; color:#4D4D4D; }
- 
- 	
- 
+
+
+
    #accent {
  	background-color: #ef870c;
  	height: .3em;
-   }	
- 
+   }
+
    .circle {
  	width:10px;height:10px;border-radius:50px;
  	background:white;
  	display: block;
    }
- 
+
    .circlepath {
  	float: right;
    }
- 
+
    .skills {
  	margin-top: 75px;
  	overflow: hidden;
@@ -46,7 +46,7 @@
    }
 
    .skills p {color:#AADAD8;}
- 
+
    .skills span {
  	/*float: right;
  	-webkit-transform: rotate(-90deg);
@@ -57,19 +57,19 @@
  	color: white;}
 
 
- 
- 
+
+
    #design, #code, #research, #testing {
  	height: 200px;
  	float: left;
    }
- 
+
    #design {
  	background-color: #71d2ea;
  	width: 20%;
  	font-size: 4em;
  	}
- 
+
  	#design span {
  	  float: right;
  	  margin-top: 60px;
@@ -80,35 +80,35 @@
 
  		font-size: 8 px;
  	}
- 
+
    #code {
  	background-color: #aadad8;
  	width: 20%;
  	font-size: 4em;
    }
- 
+
    #code span {
  	float: right;
  	margin-top: 60px;
    }
- 
+
    #research {
  	background-color: #e1e4ca;
  	width: 30%;
  	font-size: 4em;
    }
- 
+
    #research span {
  	float: right;
  	margin-top: 60px;
    }
- 
+
    #testing {
  	background-color: #ef870c;
  	width: 30%;
  	font-size: 4em;
    }
- 
+
    #testing span {	float: right;margin-top: 60px; margin-right:25px;}
 
    .skills a {color:white;}
@@ -121,24 +121,24 @@
 
 
 
- 
+
    .secondrow, .thirdrow {
  	padding-top: 20px;
    }
- 
+
    #portfolio, #ux, #about, #web, #contact {
  	padding-top: 100px;
    }
- 
+
    #portfolio img {
  	border: 2px #d3d5c1 solid;
    }
- 
-   /*@font-face {font-family: "LeagueGothic";		
-   src: url(http://baylocqkd.aisites.com/interfacedesign2/LeagueGothic.otf);}	*/	
+
+   /*@font-face {font-family: "LeagueGothic";
+   src: url(http://baylocqkd.aisites.com/interfacedesign2/LeagueGothic.otf);}	*/
    h2, h3, .skills span, .menu {
-   font-family: "league-gothic", Helvetica, Arial, sans-serif;} 
- 
+   font-family: "league-gothic", Helvetica, Arial, sans-serif;}
+
    .greeting {
  	font-family: "bree-serif",Georgia, "Times New Roman", Times, serif;
  	color: rgba(0, 0, 0, 0.900);
@@ -147,52 +147,52 @@
  	border-radius: 0px 0px 10px 10px;
  	padding: 25px;
  	overflow: auto;
- 
+
    }
- 
+
    .greeting p {
  	float:left; font-size: 3em;
 
    }
- 
+
     .arrow-right {
- 	float: left; 
- 	width: 0; 
- 	height: 0; 
+ 	float: left;
+ 	width: 0;
+ 	height: 0;
  	border-top: 100px solid transparent;
  	border-bottom: 100px solid transparent;
- 
+
  	border-left: 60px solid transparent;
    }
- 
+
    #code .arrow-right{
  	border-left: 60px solid #71D2EA;
    }
- 
+
    #research .arrow-right {
- 
+
  	border-left: 60px solid #AADAD8;
- 
+
    }
- 
+
    #testing .arrow-right {
  	border-left: 60px solid #E1E4CA;
    }
- 
+
    .arrow-down {
- 	width: 0; 
- 	height: 0; 
+ 	width: 0;
+ 	height: 0;
  	border-left: 27px solid transparent;
  	border-right: 27px solid transparent;
- 
+
  	border-top: 27px solid white;
  	margin-left: 100px;
    }
- 
+
    .navigation {
  	float: right;
    }
- 
+
    .navigation li {
  	display: inline;
  	padding: 10px;
@@ -213,25 +213,25 @@
  	font-size: 1.4em;
  	margin-bottom: -12px;
    }
- 
- 
+
+
    h2 {
  	font-size: 3em;
  	color:#71d2ea;
    }
- 
+
    h3, .skills p {
  	font-size: 2em;
  	color: #aadad8;
    }
 
 
- 
- 
+
+
    #about {
  	color: rgba(0, 0, 0, 0.900);
    }
- 
+
    #bio , #links {
  	font-size: 1.1em;
  	line-height: 1.3em;
@@ -239,27 +239,27 @@
  	padding: 30px;
  	border-top: 5px #ef870c solid;
    }
- 
+
    #bio:first-letter {
  	font-size: 300%;
  	float: left;
  	color: #ef870c;
  	padding: 1px;
    }
- 
+
    .menu{display:block;width:200px;height:200px;border-radius:100px;font-size:	2.9em;color:#fff;line-height:.8em;text-align:center;text-decoration:none;padding-top:70px;}
  .menu:hover{text-decoration:none;opacity:0.4;
  filter:alpha(opacity=40); /* For IE8 and earlier */}
- 
+
  .menu a {color:white;}
- 
+
  .mini {
    font-size: .7em;
  }
- 
+
 
  div.wrapper{
-   position:relative; /* important(so we can absolutely position the description div */ 
+   position:relative; /* important(so we can absolutely position the description div */
  }
  div.description{
    position:absolute; /* absolute position (so we can position it where we want)*/
@@ -275,7 +275,7 @@
  div.description_content{
    padding:10px;
  }
- 
+
  #toTop {
    width:100px;
  		border:1px solid #ccc;
@@ -291,8 +291,8 @@
  		font-family:verdana;
  		font-size:11px;
  }
- 
- 
+
+
 
 input[type=submit] {
 	text-transform: uppercase;
@@ -378,21 +378,21 @@ input[type=submit]:active::before {
 	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------------------------------------
    Fancy Box Styling
