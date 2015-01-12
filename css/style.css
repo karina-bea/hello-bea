@@ -3,9 +3,10 @@
 
 body {
 background: url(img/p1.png);
+font-size: 12px;
 }
 section {
-width: 80%;
+width: 90%;
 margin: auto;
 }
 
@@ -19,11 +20,12 @@ padding-left: 3%;
 float: left;
 }
 
-h2 {
-font-family: 'Open Sans';
-color: #1C1C1C;
-font-size: 18px;
-font-weight: normal;
+h6 {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #A0A4A8;
+    margin-bottom: 2%;
 }
 
 
@@ -36,38 +38,45 @@ max-width: 100%;
     width: 100%;
 }
 
+.fade {
+    opacity: 0;
+}
+
 @media (min-width: 550px){
     .container {
             width: 100%;
 }
+    #work div {
+width: 30%;
+    }
 }
 /*THE SHOTS*/
+/*
 #work {
 width: 100%;
 margin: auto;
 list-style: none;
 clear: both;
 }
+*/
 
-#work li {
-width: 20%;
-margin-right:  2%;
+#work div {
+margin-right:  3%;
 display: inline-block;
 margin-bottom: 2%;
 }
 
 /*IMAGE EFFECTS*/
-#work li img {
-border: 5px solid white;
--webkit-filter: grayscale(50%);
-border-radius: 5px;
+#work img {
+border: 1px solid #A0A4A8;
+border-radius: 3px;
 transition: all 0.5s;
 -moz-transition: all 0.5s;
 -webkit-transition: all 0.5s;
 -o-transition: all 0.5s;
+width:100%;
 }
 
-#work li img:hover {
--webkit-filter:grayscale(0);
-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+#work img:hover {
+-webkit-filter: grayscale(100%);
 }
