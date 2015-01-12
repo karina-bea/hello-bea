@@ -1,5 +1,6 @@
 /*IMPORT FONTS*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);/*GENERAL*/
+
 body {
 background: url(img/p1.png);
 }
@@ -26,7 +27,20 @@ font-weight: normal;
 }
 
 
+/* overriding Skeleton yo */
+.container {
+max-width: 100%;
+}
 
+.full {
+    width: 100%;
+}
+
+@media (min-width: 550px){
+    .container {
+            width: 100%;
+}
+}
 /*THE SHOTS*/
 #work {
 width: 100%;
