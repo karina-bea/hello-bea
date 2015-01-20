@@ -7,6 +7,7 @@ body {
 section {
 width: 90%;
 margin: auto;
+padding: 0 0 10%  0;
 }
 
 /*TYPE*/
@@ -19,6 +20,10 @@ padding-left: 3%;
 float: left;
 }
 
+h4 {
+    text-align: center;
+}
+
 h6 {
     text-transform: uppercase;
     font-weight: normal;
@@ -27,6 +32,15 @@ h6 {
     margin-bottom: 2%;
 }
 
+/*Little divider*/
+.dash {
+display: block;
+width: 1.7em;
+height: 2px;
+margin: 6px auto 10px;
+background: #333;
+text-shadow: 0 1px 2px rgba(0,0,0,.7);
+}
 
 /* overriding Skeleton yo */
 .container {
@@ -101,6 +115,8 @@ width:100%;
 -webkit-filter: grayscale(100%);
 }
 
+/*Phone Display*/
+
 .ac-wrapper {
 	width: 100%;
 	position: relative;
@@ -114,11 +130,11 @@ width:100%;
 
 .ac-wrapper h2 {
 	top: 20%;
-	width: 50%;
+	width: 28%;
 	position: absolute;
 	font-weight: 300;
 	font-size: 4em;
-	text-align: right;
+	text-align: left;
 	padding: 0 180px 0 50px;
 	pointer-events: none;
 }
@@ -372,4 +388,11 @@ width:100%;
 }
 
 
+.contact i {
+   font-size:3em;
+    padding: 5% 5%;
+}
 
+.contact {
+    text-align: center;
+}
