@@ -1,8 +1,9 @@
 /*IMPORT FONTS*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);/*GENERAL*/
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);GENERAL*/
 
 body {
     font-size: 12px;
+    background:url('../img/geometry.png')repeat;
 }
 section {
 width: 90%;
@@ -12,12 +13,10 @@ padding: 0 0 10%  0;
 
 /*TYPE*/
 h1 {
-font-family: 'Open Sans';
-color: #1C1C1C;
-font-size: 48px;
-width: 50%;
-padding-left: 3%;
-float: left;
+color: #71d2ea;
+font-size: 4.9em;
+padding-top: 3%;
+padding-bottom: 1%;
 }
 
 h4 {
@@ -45,6 +44,11 @@ text-shadow: 0 1px 2px rgba(0,0,0,.7);
 /* overriding Skeleton yo */
 .container {
 max-width: 100%;
+}
+
+#greeter {
+min-height:   600px;
+width:100%;
 }
 
 .full {
@@ -85,7 +89,43 @@ animation-delay: 0.7s;
   }
 
     
+/*Speech bubble element*/
+.tri-down {
 
+    /* Styling block element, not required */
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-bottom: 3px solid #ef870c;
+    background: #fff;
+  }
+
+  /* Required for Down Triangle */
+  .tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+  }
+
+  /* Stroke */
+  .tri-down:before {
+    bottom: -28px;
+    left: 25px;
+    border-top-color: #ef870c;
+    border-width: 28px;
+  }
+
+  /* Fill */
+  .tri-down:after {
+    bottom: -24px;
+    left: 27px;
+    border-top-color: #fff;
+    border-width: 26px;
+  }
     
 /*Dribbble API Styling*/
     #work div {
