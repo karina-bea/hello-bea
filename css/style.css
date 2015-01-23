@@ -49,6 +49,12 @@ max-width: 100%;
 #greeter {
 min-height:   600px;
 width:100%;
+text-align: center;
+}
+
+#greeter h6 {
+    margin: 0;
+    padding-top: 10px;
 }
 
 .full {
@@ -114,7 +120,7 @@ animation-delay: 0.7s;
   /* Stroke */
   .tri-down:before {
     bottom: -28px;
-    left: 25px;
+    left: 47%;
     border-top-color: #ef870c;
     border-width: 28px;
   }
@@ -122,7 +128,7 @@ animation-delay: 0.7s;
   /* Fill */
   .tri-down:after {
     bottom: -24px;
-    left: 27px;
+    left: 47.2%;
     border-top-color: #fff;
     border-width: 26px;
   }
