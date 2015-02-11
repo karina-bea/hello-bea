@@ -11,6 +11,7 @@ margin: auto;
 padding: 0 0 10%  0;
 }
 
+
 /*TYPE*/
 h1 {
 color: #71d2ea;
@@ -23,12 +24,22 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    text-align: center;
+    padding-bottom:1em;
+    
+}
+
 h6 {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 1px;
     color: #A0A4A8;
     margin-bottom: 2%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*Little divider*/
@@ -61,6 +72,11 @@ text-align: center;
     padding-top: 5em;
 }
 
+.main {
+    padding-top:6em;
+}
+
+/*For breaking 960 skeleton grid*/
 .full {
     width: 100%;
 }
